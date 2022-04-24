@@ -3,6 +3,7 @@
 :root {
     --red: #A81D1D;
     --grey-light: #4D4D4D;
+    --grey1: #FAFAFA;
     --grey2: #e6e6e6;
     --grey3: #4D4D4D;
     --grey4: #262626;
@@ -33,9 +34,10 @@ img {
     padding: 0 15px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 1326px){
     .container {
         max-width:970px;
         padding:0;
+        margin:0 auto;        
     }
 }
