@@ -378,7 +378,9 @@
     padding-top: 48px;
 }
 
-.artigos {}
+.artigos {
+    margin-bottom: 40px;
+}
 
 
 
@@ -429,11 +431,15 @@
 
 .artigos__item__authors__names__data {
     color: var(--grey6);
+    display:block;
 }
+
+.artigos__item__authors__names__data.inline {display:inline;}
+
+.artigos__columns {margin-left: auto;}
 
 .artigos__item__text {
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .artigos__item__text p {
@@ -460,6 +466,8 @@ p.artigos__item__text__pic__font {
     line-height: 16px;
     margin-top:4px;
 }
+
+.artigos__item__cta {margin-top:25px;}
 
 .artigos__item__network {
     display:flex;

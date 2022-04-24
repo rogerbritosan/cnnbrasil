@@ -51,6 +51,9 @@ figure {
     }
 }
 
+/* alinhamentos */
+.mx-auto {margin: 0 auto;}
+
 /* botões */
 .btn {
     border-radius: 4px; 
@@ -70,9 +73,19 @@ figure {
 .btn.normal {
     font-size: 14px; 
     padding: 10px 10px;
-    max-width: 300px;  
+    max-width: 210px;  
 }
 
 .btn.red {
     border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.plus {
+    display:inline-block;
+    width: 12px;
+    height: 12px;
+    background-image:url(../img/ico-plus.png);
+    background-repeat: no-repeat;
+    margin-left: 5px;
 }
