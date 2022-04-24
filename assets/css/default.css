@@ -8,6 +8,7 @@
     --grey3: #4D4D4D;
     --grey4: #262626;
     --grey5: #E5E5E5;
+    --grey6: #b7b7b7;
     --black: #000;
     --black2: #0c0c0c;
     --white: #fff;
@@ -33,6 +34,10 @@ img {
     height: auto;
 }
 
+figure {
+    margin-bottom:23px;
+}
+
 .container {
     padding: 0 15px;
     width:100%;
@@ -44,4 +49,30 @@ img {
         padding:0;
         margin:0 auto;        
     }
+}
+
+/* botões */
+.btn {
+    border-radius: 4px; 
+    display: flex;
+    width:100%; 
+    border: 1px solid var(--black2);
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--black2);
+}
+
+.btn.litle {
+    font-size: 13px;    
+}
+
+.btn.normal {
+    font-size: 14px; 
+    padding: 10px 10px;
+    max-width: 300px;  
+}
+
+.btn.red {
+    border: 1px solid var(--red);
 }

@@ -371,7 +371,7 @@
 /* Blog */
 
 .main {
-    background-color: var(--grey2);
+    background-color: var(--grey1);
 }
 
 .blog {
@@ -380,14 +380,97 @@
 
 .artigos {}
 
+
+
+/* network */
 .artigos__item {
     position:relative;
     border-width: 1px 1px 1px 0;
     border-style: solid;
     border-color: var(--grey5);
     background-color: var(--white);
-    padding: 30px 24px;
+    padding: 35px 24px;
     border-radius: 0 4px 4px 0;
+    margin-bottom: 32px;
+}
+
+.artigos__item h2 {
+    color: var(--grey4);
+}
+
+.artigos__item__authors {
+    margin-top: 20px;
+    display:flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.artigos__item__authors__pics {
+    display:flex;
+    gap: 0 10px;
+}
+
+.artigos__item__authors__pics span {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.artigos__item__authors__pics span img {
+    border-radius: 50%;
+    border: 1px solid var(--grey4);
+}
+
+.artigos__item__authors__names {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--grey3);
+}
+
+.artigos__item__authors__names__data {
+    color: var(--grey6);
+}
+
+.artigos__item__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.artigos__item__text p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--grey3);
+}
+
+p.artigos__item__text__pic__description {
+    font-size: 13px;
+    color: var(--black2);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top:4px;
+}
+
+p.artigos__item__text__pic__font {
+    font-size: 13px;
+    color: var(--grey4);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-top:4px;
+}
+
+.artigos__item__network {
+    display:flex;
+    list-style:none;
+    padding:0;
+    margin-bottom:15px;
+    gap: 0 15px;
+}
+
+.artigos__item__network__app__link {
+    display:block;
 }
 
 .artigos__item::after {
@@ -407,8 +490,29 @@
         justify-content: space-between;
     }
 
-    .artigos__item {
+    .artigos {
         width: 673px;
     }
 
+    .aside {width: 264px;}
+
+}
+
+/* mais lidas */
+
+.mais-lidas__title {
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+
+.mais-lidas__title i {
+    display:inline-block;
+    background-image:url(../img/ico-star.png);
+    width:24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-right: 6px;
 }
