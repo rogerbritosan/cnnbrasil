@@ -224,7 +224,7 @@
         padding-left: 116px;
         position:relative;
         max-width:1296px;
-        width:1296px;
+        width:100%;
     }
 
     .header__nav__search {
@@ -674,6 +674,10 @@ p.artigos__item__text__pic__font {
 }
 
 /* footer */
+.footer--container {
+    max-width:1296px;
+    width:100%;
+}
 
 .recentes {
     background-color: var(--black2);
@@ -722,7 +726,68 @@ p.artigos__item__text__pic__font {
 
 .newsletter {
     background-color: var(--grey4);
+
 }
+
+.newsletter--container {
+    display:flex;
+    justify-content: space-between;
+    height: 112px;
+    align-items: center;
+    max-width:1296px;
+    width:100%;
+}
+
+.newsletter--wrap {
+    padding-left: 52px;
+    background:url(../img/ico-email-white.png) no-repeat 0 center;
+}
+
+.newsletter__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.newsletter__description {
+    font-size: 14px;
+    color: var(--white);
+}
+
+.newsletter__field {
+    background-color: var(--grey-light);
+    height: 36px;
+    border:0;
+    border-radius: 4px;
+    width: 390px;
+    background-image:url(../img/ico-email-white-little.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    color: var(--white);
+}
+
+.newsletter__field::-webkit-input-placeholder { /* Edge */
+    color: var(--grey7);
+}
+
+.newsletter__field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--grey7);
+}
+
+.newsletter__field::placeholder  {
+    color: var(--grey7);
+}
+
+.newsletter__field__cta {
+    width: 80px;
+}
+
+.newsletter--form {
+    display:flex;
+    gap: 0 10px;
+}
+
 .bottom {
     background-color: var(--black);
 }

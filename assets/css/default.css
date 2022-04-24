@@ -65,6 +65,7 @@ figure {
     text-decoration: none;
     justify-content: center;
     color: var(--black2);
+    cursor:pointer;
 }
 
 .btn.little {
@@ -82,6 +83,12 @@ figure {
 .btn.red {
     border: 1px solid var(--red);
     color: var(--red);
+}
+
+.btn.red-reverse {
+    border: 0;
+    color: var(--white);
+    background-color: var(--red);
 }
 
 .plus {
