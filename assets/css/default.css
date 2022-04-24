@@ -9,6 +9,7 @@
     --grey4: #262626;
     --grey5: #E5E5E5;
     --grey6: #b7b7b7;
+    --grey7: #8C8C8C;
     --black: #000;
     --black2: #0c0c0c;
     --white: #fff;
@@ -86,6 +87,15 @@ figure {
     width: 12px;
     height: 12px;
     background-image:url(../img/ico-plus.png);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.profile {
+    display:inline-block;
+    width: 19px;
+    height: 15px;
+    background-image:url(../img/ico-profile.png);
     background-repeat: no-repeat;
     margin-left: 5px;
 }
