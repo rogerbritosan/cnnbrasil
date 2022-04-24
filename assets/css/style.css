@@ -11,10 +11,42 @@
         display:none;
     }
 
+    .header__nav__menu {display:n4one;}
+
+    .header__nav__search {display:none;}
+
+    .header__nav__search--active {display:block;}
+
     .header__nav--container {
         display:flex;
         align-items: center;
         justify-content: flex-end;
+        position: relative;
+    }
+
+    .header__nav__menu {
+        list-style:none;
+        background-color: var(--black);
+        position: absolute;
+        top:-16px;
+        left:0;
+        width:100%;
+    }
+
+    .header__nav__menu--active {
+        padding: 60px 20px 0;
+        display:flex;
+    }
+
+    .header__nav__menu--active .header__nav__menu__item {
+        margin:30px 0;
+    }
+
+    .header__nav__menu--active .header__nav__menu__item a {
+        font-size: 16px;
+        color: var(--white);
+        text-decoration: none;
+        display:table;
     }
 
     .header__nav__mobile_button {
@@ -28,6 +60,7 @@
         border-bottom: 1px solid #fff;
         text-indent:-9999px;
         background-color: transparent;
+        z-index: 1;
     }
 
     .header__nav__mobile_button::before,
@@ -50,6 +83,55 @@
         top: -1.5px;
         left: calc(50% - 1.5px);
         height: calc(100% + 3px);
+    }
+
+    .header__nav__mobile_button--active {
+        border:0;
+        transform: rotate(45deg);
+    }
+
+    .header__nav__mobile_button--active::after {
+        opacity: 1;
+    }
+
+    .header__nav__menu--active {display:block;}
+
+    .header__nav__search--box {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        height:64px;
+    }
+
+    .header__nav__search--box .header__nav__search__cta {
+        position: absolute;
+        border: 0;
+        background-color: transparent;
+        top: 2px;
+        left: 10px;
+        background-image: url(../img/ico-search.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-indent: -9999px;
+        width: 30px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .header__nav__search--active .header__nav__search__cta {
+        background-image: url(../img/ico-search-active.png);
+        height:64px;
+    }
+
+    .header__nav__search--active .header__nav__search--container {padding:0;}
+
+    .header__nav__search--active .header__nav__search__field {
+        background-color: var(--black2);
+        height:64px;
+        border:0;
+        width: 100%;
+        padding: 0 15px 0 44px;
     }
 
 }
