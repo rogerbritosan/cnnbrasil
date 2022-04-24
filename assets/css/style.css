@@ -522,5 +522,35 @@ p.artigos__item__text__pic__font {
     width:24px;
     height: 24px;
     background-repeat: no-repeat;
-    margin-right: 6px;
+    margin-right: 10px;
+}
+
+.mais-lidas__list {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--grey3);
+    list-style: none;
+    counter-reset: li;
+    margin-left: 6px;
+}
+
+.mais-lidas__list li {
+    counter-increment: li;
+    position: relative;
+    padding-left:23px;
+    margin-bottom: 18px;
+}
+
+.mais-lidas__list li::before {
+    content: counter(li);
+    color: var(--red);
+    display: inline-block;
+    width:30px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.aside__ad {
+    margin: 40px 0 26px;
 }

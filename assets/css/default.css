@@ -29,7 +29,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-img {
+.img-fluid {
     max-width: 100%;
     height: auto;
 }
