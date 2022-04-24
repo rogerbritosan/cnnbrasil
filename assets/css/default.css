@@ -15,6 +15,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -37,6 +38,7 @@ img {
 @media (min-width: 1326px){
     .container {
         max-width:970px;
+        width:100%;
         padding:0;
         margin:0 auto;        
     }

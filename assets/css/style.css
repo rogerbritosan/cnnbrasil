@@ -64,13 +64,35 @@
         padding-right:15px;
     }
 
+    .header__nav__search--box {
+        position: relative;
+    }
+
     .header__nav__search__field {
         background-color: var(--grey1);
         width:300px;
+        padding: 0 15px 0 44px;
         height: 47px;
         border-width:1px 1px 0 1px;
         border-style: solid;
         border-color: var(--grey2);
+        font-size:14px;
+        color: var(--grey-light);
+    }
+
+    .header__nav__search__cta {
+        border:0;
+        background-color: transparent;
+        position: absolute;
+        top:2px;
+        left:10px;
+        background-image:url(../img/ico-search.svg);
+        background-repeat:no-repeat;
+        background-position: center center;
+        text-indent: -9999px;
+        width:30px;
+        height:48px;
+        cursor:pointer;
     }
 
     .header__nav__menu .header__nav__menu__item a {
@@ -106,7 +128,40 @@
         color: var(--white);
     }
 
-
-
 }
 
+
+/* Banner */
+.featured {
+    background: rgba(250,250,250,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(250,250,250,1) 0%, rgba(168,168,168,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(250,250,250,1)), color-stop(100%, rgba(168,168,168,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(250,250,250,1) 0%, rgba(168,168,168,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(250,250,250,1) 0%, rgba(168,168,168,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(250,250,250,1) 0%, rgba(168,168,168,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(250,250,250,1) 0%, rgba(168,168,168,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#a8a8a8', GradientType=1 );
+}
+
+.featured__wrap {
+    display:flex;
+}
+
+@media (min-width: 1326px){
+    .featured__wrap {
+        flex-direction: row;
+        align-items: center;
+        height:360px;
+        justify-content: space-between;
+    }
+
+    .featured__text__title {
+        width:300px;
+        margin-bottom: 22px;
+    }
+
+    .featured__text__description {
+        color: var(--grey-light);
+        line-height: 22px;
+    }
+}
