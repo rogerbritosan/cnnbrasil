@@ -693,12 +693,31 @@ p.artigos__item__text__pic__font {
     font-weight: 600;
     display:flex;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .recentes__title span {
     display:inline-block;
     padding-bottom:3px;
     border-bottom: 1px solid var(--red);
+}
+
+.recentes__carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 0 30px;
+}
+
+.recentes__carousel__item {
+    width: 165px;
+}
+
+.recentes__carousel__item__description {
+    color: var(--white);
+    text-decoration: none;
+    padding-top:22px;
+    display:block;
+    line-height: 1.2;
 }
 
 .newsletter {
