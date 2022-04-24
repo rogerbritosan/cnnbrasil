@@ -66,6 +66,12 @@ figure {
     justify-content: center;
     color: var(--black2);
     cursor:pointer;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: var(--black2);
+    color: var(--white);
 }
 
 .btn.little {
@@ -85,10 +91,22 @@ figure {
     color: var(--red);
 }
 
+.btn.red:hover {
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: var(--white);
+}
+
 .btn.red-reverse {
-    border: 0;
+    border: 1px solid var(--red);
     color: var(--white);
     background-color: var(--red);
+}
+
+.btn.red-reverse:hover {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
 }
 
 .plus {

@@ -765,6 +765,7 @@ p.artigos__item__text__pic__font {
     background-position: 10px center;
     padding-left: 40px;
     color: var(--white);
+    font-size:14px;
 }
 
 .newsletter__field::-webkit-input-placeholder { /* Edge */
@@ -781,6 +782,7 @@ p.artigos__item__text__pic__font {
 
 .newsletter__field__cta {
     width: 80px;
+    height: 36px;
 }
 
 .newsletter--form {
@@ -790,4 +792,40 @@ p.artigos__item__text__pic__font {
 
 .bottom {
     background-color: var(--black);
+    padding-top: 48px;
+    padding-bottom: 16px;
+}
+
+.bottom--container {
+    max-width:1296px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.bottom__menu {
+    list-style:none;
+}
+
+@media (min-width: 1326px){
+    .bottom--container {
+        flex-direction: row;
+        gap: 0 128px;
+    }
+}
+
+.bottom__copy {
+    padding-top:40px;
+    border-bottom: 1px solid var(--red);
+    color: var(--white);
+    font-size: 14px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1326px){
+    .bottom__copy--container {
+        max-width:1296px;
+        width:100%;
+    }
 }
