@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root {
+    --red: #A81D1D;
+    --grey-light: #4D4D4D;
+    --grey2: #e6e6e6;
+    --grey3: #4D4D4D;
+    --grey4: #262626;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width:970px;
+        padding:0;
+    }
+}
