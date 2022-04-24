@@ -171,7 +171,7 @@
 @media (min-width: 1326px){
     .header__nav__mobile {display:none;}
 
-    .header__nav__menu--active .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(1) {
+    .header__nav__menu .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(1) {
         display:none;
     }
 
@@ -578,6 +578,7 @@ p.artigos__item__text__pic__font {
 @media (max-width: 1325px){
     .colunistas {
         width: 100%;
+        max-width: 600px;
     }
 }
 
@@ -670,4 +671,39 @@ p.artigos__item__text__pic__font {
     .assuntos-momento {
         width: 100%;
     }
+}
+
+/* footer */
+
+.recentes {
+    background-color: var(--black2);
+    padding: 40px 0;
+}
+
+.recentes__title {
+    margin:0;
+    padding:0;
+    background-image:url(../img/ico-recentes.png);
+    background-repeat:no-repeat;
+    width:300px;
+    height:33px;
+    padding-left: 63px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    display:flex;
+    align-items: center;
+}
+
+.recentes__title span {
+    display:inline-block;
+    padding-bottom:3px;
+    border-bottom: 1px solid var(--red);
+}
+
+.newsletter {
+    background-color: var(--grey4);
+}
+.bottom {
+    background-color: var(--black);
 }
