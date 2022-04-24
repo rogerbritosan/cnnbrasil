@@ -67,8 +67,10 @@ figure {
     color: var(--black2);
 }
 
-.btn.litle {
-    font-size: 13px;    
+.btn.little {
+    font-size: 13px;  
+    padding:3px 5px;  
+    font-weight: 300;
 }
 
 .btn.normal {

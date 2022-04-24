@@ -558,6 +558,7 @@ p.artigos__item__text__pic__font {
 .colunistas {
     width: 240px;
     margin: 0 auto;
+    margin-bottom: 40px;
     background-color: var(--white);
     border-radius: 0 0 8px 8px;
 }
@@ -616,3 +617,33 @@ p.artigos__item__text__pic__font {
 }
 
 .colunista__cta {margin-top: 20px;}
+
+
+/* Assuntos do momento */
+.assuntos-momento {
+    font-weight: 600;
+    font-size: 16px;
+    width: 240px;
+    margin:0 auto
+}
+
+.assuntos-momento i {
+    display:inline-block;
+    background-image:url(../img/ico-star.png);
+    width:24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.assuntos-momento__title {
+    margin-bottom: 15px;
+    display:flex;
+    align-items: center;
+}
+
+.assuntos-momento__tags a {
+    display:inline-block;
+    width: auto;
+    margin:4px 2px;
+}
