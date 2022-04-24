@@ -49,6 +49,10 @@
         display:table;
     }
 
+    .header__nav__menu--active .header__nav__menu__item.header__nav__menu__item--live a {
+        background-color: var(--grey4);
+    }
+
     .header__nav__mobile_button {
         width: 16px;
         height: 13px;
