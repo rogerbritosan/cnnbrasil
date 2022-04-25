@@ -7,6 +7,10 @@
 
 @media (max-width: 1325px){
 
+    .main {
+        padding-top: 80px;
+    }
+
     .header {
         margin-top: 16px;
         margin-bottom: 20px;
@@ -19,26 +23,41 @@
 
     .header__nav__search {display:none;}
 
-    .header__nav__search--active {display:block;}
+    .header__nav__mobile {
+        position:relative;
+        z-index: 2;
+    }
+
+    .header__nav__search--active {
+        display:block;
+        position: fixed;
+        top:80px;
+        left:0;
+        width: 100%;
+        z-index: 2;
+    }
 
     .header__nav--container {
         display:flex;
         align-items: center;
         justify-content: flex-end;
         position: relative;
+        width: 100%;
+        max-width: 100%;
     }
 
     .header__nav__menu {
         list-style:none;
         background-color: var(--black);
-        position: absolute;
-        top:-16px;
+        position: fixed;
+        top:0;
         left:0;
         width:100%;
+        z-index: 1;
     }
 
     .header__nav__menu--active {
-        padding: 60px 20px 0;
+        padding: 140px 20px 0;
         display:flex;
     }
 
@@ -91,7 +110,6 @@
         border-bottom: 1px solid #fff;
         text-indent:-9999px;
         background-color: transparent;
-        z-index: 1;
     }
 
     .header__nav__mobile_button::before,
@@ -202,6 +220,18 @@
     background-color: var(--black);
     display:flex;
     list-style:none;
+}
+
+@media (max-width: 1326px){
+    .header__nav--wrap {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        padding-top: 22px;
+        background: #fff;
+        height: 100px;
+    }
 }
 
 .header__nav__menu .header__nav__menu__item a {
@@ -573,6 +603,12 @@ p.artigos__item__text__pic__font {
     margin: 40px 0 26px;
 }
 
+@media (max-width: 1325px){
+    .aside__ad {
+        text-align: center;
+    }
+}
+
 .colunistas {
     width: 240px;
     margin: 0 auto;
@@ -676,6 +712,7 @@ p.artigos__item__text__pic__font {
 @media (max-width: 1325px){
     .assuntos-momento {
         width: 100%;
+        padding-bottom: 40px;
     }
 }
 
@@ -712,6 +749,12 @@ p.artigos__item__text__pic__font {
     border-bottom: 1px solid var(--red);
 }
 
+@media (max-width: 1325px){
+    .recentes__carousel--wrap {
+        overflow-x: scroll;
+    }
+}
+
 .recentes__carousel {
     display: flex;
     flex-direction: row;
@@ -745,6 +788,24 @@ p.artigos__item__text__pic__font {
     width:100%;
 }
 
+@media (max-width: 1325px){
+    .newsletter--container {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 15px;
+        align-items: center;
+    }
+
+    .newsletter--wrap {
+        margin-bottom:25px;
+    }
+
+    .newsletter--form {
+        width: auto;
+    }
+
+}
+
 .newsletter--wrap {
     padding-left: 52px;
     background:url(../img/ico-email-white.png) no-repeat 0 center;
@@ -764,15 +825,21 @@ p.artigos__item__text__pic__font {
 .newsletter__field {
     background-color: var(--grey-light);
     height: 36px;
+    width:100%; 
     border:0;
     border-radius: 4px;
-    width: 390px;
     background-image:url(../img/ico-email-white-little.png);
     background-repeat: no-repeat;
     background-position: 10px center;
     padding-left: 40px;
     color: var(--white);
     font-size:14px;
+}
+
+@media (min-width: 1326px){
+    .newsletter__field {
+        width: 390px;
+    }
 }
 
 .newsletter__field::-webkit-input-placeholder { /* Edge */
@@ -821,8 +888,33 @@ p.artigos__item__text__pic__font {
     }
 }
 
+@media (max-width: 1325px){
+    .bottom__menu {
+        text-align: center;
+    }
+
+    .bottom__logo {
+        margin: 0 auto;
+        margin-bottom:50px;
+    }
+
+    .bottom__menu__item {
+        margin-bottom:15px;
+    }
+
+    .artigos__item__network--wrap {
+        margin-top:50px;
+        text-align: center;
+    }
+
+    .artigos__item__network {
+        justify-content: center;
+    }
+
+}
+
 .bottom__copy {
-    padding-top:40px;
+    padding-top:30px;
     border-bottom: 1px solid var(--red);
     color: var(--white);
     font-size: 14px;
@@ -845,4 +937,11 @@ p.artigos__item__text__pic__font {
     color: var(--white);
     text-decoration: none;
     font-size: 14px;
+}
+
+@media (max-width: 1325px){
+    .bottom__copy {
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }

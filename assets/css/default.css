@@ -42,6 +42,8 @@ figure {
 .container {
     padding: 0 15px;
     width:100%;
+    margin:0 auto;
+    max-width: 600px;
 }
 
 @media (min-width: 1326px){
@@ -116,6 +118,10 @@ figure {
     background-image:url(../img/ico-plus.png);
     background-repeat: no-repeat;
     margin-left: 5px;
+}
+
+.btn.red:hover .plus {
+    background-image:url(../img/ico-plus-white.png);
 }
 
 .profile {
