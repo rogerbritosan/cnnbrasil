@@ -459,8 +459,10 @@
     margin-bottom:15px;
 }
 
-.artigos__item h2 {
+.artigos__item h2,
+.artigos__item h2 a {
     color: var(--grey4);
+    text-decoration: none;
 }
 
 .artigos__item__authors {
@@ -609,11 +611,16 @@ p.artigos__item__text__pic__font {
     margin-left: 6px;
 }
 
-.mais-lidas__list li {
+.mais-lidas__list .mais-lidas__list__item {
     counter-increment: li;
     position: relative;
     padding-left:23px;
     margin-bottom: 18px;
+}
+
+.mais-lidas__list .mais-lidas__list__item > a {
+    color: var(--grey3);
+    text-decoration:none;
 }
 
 .mais-lidas__list li::before {
