@@ -30,7 +30,7 @@
 
     .header__nav__search--active {
         display:block;
-        position: fixed;
+        position: absolute;
         top:80px;
         left:0;
         width: 100%;
@@ -58,7 +58,8 @@
 
     .header__nav__menu--active {
         padding: 140px 20px 0;
-        display:flex;
+        position:absolute;
+        top: -22px;
     }
 
     .header__nav__menu--active .header__nav__menu__item {
@@ -230,8 +231,12 @@
         top: 0;
         padding-top: 22px;
         background: #fff;
-        height: 100px;
     }
+
+    .header__nav--wrap--active {
+        position: absolute;
+    }
+
 }
 
 .header__nav__menu .header__nav__menu__item a {
