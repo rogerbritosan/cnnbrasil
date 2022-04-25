@@ -21,6 +21,9 @@
 
     .header__nav__menu--wrap {
         height: 48px;
+    }
+
+    .header--active .header__nav__menu--wrap {
         overflow-y: scroll;
     }
 
@@ -946,10 +949,6 @@ p.artigos__item__text__pic__font {
     .artigos__item__network--wrap {
         margin-top:50px;
         text-align: center;
-    }
-
-    .artigos__item__network {
-        justify-content: center;
     }
 
 }
