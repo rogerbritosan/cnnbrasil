@@ -985,3 +985,9 @@ p.artigos__item__text__pic__font {
         padding-bottom: 20px;
     }
 }
+
+@media (max-width: 1325px){
+    .bottom .artigos__item__network {
+        justify-content: center;
+    }
+}
