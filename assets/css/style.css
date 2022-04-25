@@ -33,7 +33,7 @@
         z-index: 2;
     }
 
-    .header__nav__mobile--active {
+    .header--active .header__nav__mobile {
         position: absolute;
         bottom: 22px;
         width: 100%;
@@ -44,9 +44,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: var(--black);
     }
 
-    .header__nav__search--active {
+    .header--active .header__nav__search {
         display:block;
         position: fixed;
         top:0;
@@ -64,6 +65,12 @@
         max-width: 100%;
     }
 
+    .header--active .header__nav--container {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
     .header__nav__menu {
         list-style:none;
         background-color: var(--black);
@@ -74,34 +81,34 @@
         z-index: 1;
     }
 
-    .header__nav__menu--active {
+    .header--active .header__nav__menu {
         padding: 55px 20px 0;
-        position:absolute;
+        position: static;
         top: 0;
     }
 
-    .header__nav__menu--active .header__nav__menu__item {
+    .header--active .header__nav__menu__item {
         margin:30px 0;
     }
 
-    .header__nav__menu--active .header__nav__menu__item--live {
+    .header--active .header__nav__menu__item--live {
         margin-top: 10px;
     }
 
-    .header__nav__menu--active .header__nav__menu__item a {
+    .header--active .header__nav__menu__item a {
         font-size: 16px;
         color: var(--white);
         text-decoration: none;
         display:inline-block;
     }
 
-    .header__nav__menu--active .header__nav__menu__item.header__nav__menu__item--live a {
+    .header--active .header__nav__menu__item.header__nav__menu__item--live a {
         background-color: var(--grey4);
         display:block;
         padding:15px;
     }
 
-    .header__nav__menu--active .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(2) {
+    .header--active .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(2) {
         border:1px solid var(--white);
         display:inline-block;
         margin-left: 8px;
@@ -111,7 +118,7 @@
         position: relative;
     }
 
-    .header__nav__menu--active .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(2)::after {
+    .header--active .header__nav__menu__item.header__nav__menu__item--live a span:nth-child(2)::after {
         content: '';
         position: absolute;
         width: 11px;
@@ -157,16 +164,16 @@
         height: calc(100% + 3px);
     }
 
-    .header__nav__mobile_button--active {
+    .header--active .header__nav__mobile_button {
         border:0;
         transform: rotate(45deg);
     }
 
-    .header__nav__mobile_button--active::after {
+    .header--active .header__nav__mobile_button::after {
         opacity: 1;
     }
 
-    .header__nav__menu--active {display:block;}
+    .header--active .header__nav__menu {display:block;}
 
     .header__nav__search--box {
         position: absolute;
@@ -191,14 +198,14 @@
         cursor: pointer;
     }
 
-    .header__nav__search--active .header__nav__search__cta {
+    .header--active .header__nav__search__cta {
         background-image: url(../img/ico-search-active.png);
         height:64px;
     }
 
-    .header__nav__search--active .header__nav__search--container {padding:0;}
+    .header--active .header__nav__search--container {padding:0;}
 
-    .header__nav__search--active .header__nav__search__field {
+    .header--active .header__nav__search__field {
         background-color: var(--black2);
         height:64px;
         border:0;
@@ -216,10 +223,6 @@
         display:none;
     }
 
-}
-
-.header__nav {
-    position:relative;
 }
 
 .header__nav__logo {
@@ -243,7 +246,10 @@
     background-color: var(--black);
     display:flex;
     list-style:none;
+    position: relative;
 }
+
+.header--active .header__nav__logo {display:none;}
 
 @media (max-width: 1326px){
     .header__nav--wrap {
@@ -255,7 +261,8 @@
         background: #fff;
     }
 
-    .header__nav__menu--wrap--active {
+    .header--active .header__nav__menu--wrap {
+        width: 100%;
         height: 100vh;
     }
 
